@@ -28,7 +28,7 @@ server:
     key-store: src/main/resources/keystore_pkcs.jks
     key-store-password: my_password2
     key-store-type: PKCS12
-    key-alias: linkedin
+    key-alias: my_alias
     key-password: my_password2
 </pre>
 </I>
