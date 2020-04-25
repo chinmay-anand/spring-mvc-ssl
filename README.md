@@ -8,7 +8,7 @@ Refer below for implementing a self-signed SSL certificate for you rSpring Boot 
 2. We can use the same tool "keytool" again to generate the PKCS12 keystore, let it be keystore_pkcs.jks. PKCS12 uses industry standard where as JKS uses a proprietory format.
 3. For PKCS12 keystore the key-store-password and key-password must be same, where as for JKS keystore they may be different if we want.
 4. In the "application.yml" resources file under "src/main/resources" folder provide the key-store details under server.ssl block, i.e  server.ssl.key-store, server.ssl.key-store-password, server.ssl.key-store-type, server.ssl.key-alias, server.ssl.key-password
-
+* "application.yml" entry while using JKS keystore
 <I>
 <pre>
 server:
@@ -21,6 +21,7 @@ server:
 </pre>
 </I>
 
+* "application.yml" entry while using PKCS12 keystore (Note the difference between the two passwords and the key-store-type)
 <I>
 <pre>
 server:
